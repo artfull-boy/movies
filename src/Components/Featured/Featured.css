@@ -1,0 +1,106 @@
+.featured {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.featured h3 {
+  color: #fff;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.movies-list {
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+.scroll-content {
+    width: 120%; /* Adjust width as needed */
+    overflow-x: scroll;
+    white-space: nowrap;
+    gap: 15px;
+  }
+  .favorite_clicked {
+    fill: #E11D48;
+}
+.movies-list > div {
+    margin-right: 15px;
+}
+.poster img {
+    width: 250px;
+height: 370px;
+flex-shrink: 0;
+}
+.movie {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 250px;
+    position: relative;
+}
+.movie .favorite {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.movie .favorite .heart{
+    position: absolute;
+    bottom: 10%;
+}
+.movie .favorite:hover .heart path{
+    transition: 0.5s;
+    fill: #E11D48;
+}
+.movie .details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.movie .details .date {
+    color: var(--gray-400, #9CA3AF);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.movie .details .title {
+    color: #FFF;
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.movie .details .rating {
+    display: flex;
+    justify-content: space-between;
+}
+.movie .details .rating .imdb {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+.movie .details .rating .imdb p {
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px;
+}
+.movie .details .rating .rotten {
+    display: flex;
+    gap: 5px;
+    align-items: flex-start;
+}
+.movie .details .rating .rotten p {
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px;
+}
