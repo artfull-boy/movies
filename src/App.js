@@ -8,7 +8,7 @@ import Upcoming from './Components/Upcoming/Upcoming';
 import Search from './Components/Search/Search';
 import Categories from './Components/Categories/Categories';
 import Favourites from './Favourites'
-
+import Footer from "./Footer"
 
 function App() {
   const [search,setSearch] = React.useState("");
@@ -50,6 +50,7 @@ function App() {
       {search == "" && <Featured addToFavourite={handleFavourite}/>}
       {search == "" && <Categories addToFavourite={handleFavourite}/>}
       <Favourites favorites={favourites} deleteFavourite={deleteFavourite}/>
+      <Footer />
     </>
   );
 }

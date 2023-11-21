@@ -13,14 +13,9 @@
     flex-wrap: wrap;
 }
 .categories ul li {
-    padding: 20px 50px;
+    padding: 20px 30px;
     background-color: white;
     color: #E11D48;
-}
-@media (max-width:1300px) {
-    .categories ul li {
-    padding: 15px 30px;
-}
 }
 .categories ul li:first-child {
     border-top-left-radius: 8px;
@@ -30,6 +25,16 @@
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+@media (max-width: 900px) {
+    .categories ul li:first-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .categories ul li:last-child {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+  }
 .categories ul li:hover,
 .categories ul li.clicked{
     transition: 0.5s;

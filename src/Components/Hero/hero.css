@@ -42,6 +42,16 @@ nav .fav img {
   outline: none;
   background-color: transparent;
 }
+@media (max-width: 900px) {
+  .search input {
+    width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  .search input {
+    width: 350px;
+  }
+}
 .search input::placeholder {
     color: rgb(191, 191, 191);
 }

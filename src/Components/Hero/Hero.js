@@ -12,9 +12,6 @@ export function Hero(props) {
                         <div className='logo'>
                             <img src={logo} />
                         </div>
-                        <div className='fav'>
-                                <img src={favorite} />
-                        </div>
                     </nav>
                 <div className="search">
                     <h1>Watch Movies Online For Free</h1>
